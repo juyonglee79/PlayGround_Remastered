@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="SignUpVm"
+            type="com.dsm2018.playground_remastered.Activity.SignUp.SignUpViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main">
+
+        <ImageView
+            android:id="@+id/img_signUp_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:id="@+id/btn_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="@{()->SignUpVm.post()}"
+            android:background="@drawable/back_btn_login"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_signUp_logo"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_signUp_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@={SignUpVm.name}"
+                android:hint="Name"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingStart="15dp"
+                android:background="@drawable/back_et_login"/>
+
+            <EditText
+                android:id="@+id/edit_signUp_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:text="@={SignUpVm.id}"
+                android:hint="ID"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingStart="15dp"
+                android:background="@drawable/back_et_login"/>
+
+            <EditText
+                android:id="@+id/edit_signUp_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:text="@={SignUpVm.password}"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingStart="15dp"
+                android:background="@drawable/back_et_login"/>
+
+            <EditText
+                android:id="@+id/edit_signUp_passwordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:text="@={SignUpVm.passwordConfirm}"
+                android:hint="Password 확인"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingStart="15dp"
+                android:background="@drawable/back_et_login"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
