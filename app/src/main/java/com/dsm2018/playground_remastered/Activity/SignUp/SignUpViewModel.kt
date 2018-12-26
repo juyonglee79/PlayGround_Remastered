@@ -21,7 +21,6 @@ class SignUpViewModel(val signUpNavigator: SignUpNavigator) {
 
     fun check(context: Context) {
         checkValidate()
-//        checkOverlap(context)
     }
 
     fun checkValidate() {

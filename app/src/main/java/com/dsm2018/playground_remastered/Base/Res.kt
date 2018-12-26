@@ -1,6 +1,6 @@
 package com.dsm2018.playground_remastered.Base
 
-import android.content.Context
+import com.dsm2018.playground_remastered.Activity.SignIn.SignInViewModel
 import com.dsm2018.playground_remastered.Connect.Util
 
 import retrofit2.*
@@ -8,7 +8,7 @@ import retrofit2.*
 /**
  * Created by root1 on 2017. 11. 23..
  */
-abstract class Res<T>(val context: Context, val check401: Boolean = true): Callback<T> {
+abstract class Res<T>(val context: SignInViewModel, val check401: Boolean = true): Callback<T> {
 
     abstract fun callBack(code: Int, body: T?)
 
