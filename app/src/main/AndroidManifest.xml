@@ -9,16 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Splash.SplashActivity">
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.SignIn.SignInActivity"/>
-        <activity android:name=".Activity.SignUp.SignUpActivity"/>
-        <activity android:name=".Activity.Main.MainActivity"/>
+        <activity android:name="com.dsm2018.playground_remastered.ui.signIn.SignInActivity"/>
+        <activity android:name="com.dsm2018.playground_remastered.ui.signUp.SignUpActivity"/>
+        <activity android:name="com.dsm2018.playground_remastered.ui.main.MainActivity"/>
     </application>
 
 </manifest>

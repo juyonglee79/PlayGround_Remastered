@@ -1,4 +1,4 @@
-package com.dsm2018.playground_remastered.Activity.SignUp
+package com.dsm2018.playground_remastered.ui.signUp
 
 import android.content.Intent
 

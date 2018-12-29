@@ -1,21 +1,28 @@
-package com.dsm2018.playground_remastered.Activity.SignIn
+package com.dsm2018.playground_remastered.ui.signIn
 
+import android.annotation.SuppressLint
+import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
-import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import com.dsm2018.playground_remastered.Activity.Main.MainActivity
 import com.dsm2018.playground_remastered.R
 import com.dsm2018.playground_remastered.databinding.ActivitySigninBinding
+import com.dsm2018.playground_remastered.ui.main.MainActivity
+import com.dsm2018.playground_remastered.util.DataBindingActivity
 
-class SignInActivity : AppCompatActivity(), SignInNavigator {
+class SignInActivity : DataBindingActivity<ActivitySigninBinding>(), SignInNavigator {
 
+    override val layoutId: Int
+        get() = R.layout.activity_signin
+
+    val viewModel: SignInViewModel by lazy { ViewModelProviders.of(this)[SignInViewModel::class.java] }
+
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var binding: ActivitySigninBinding = DataBindingUtil.setContentView(this, R.layout.activity_signin)
-    }
+        binding.vm = viewModel
 
+    }
 
     override fun success(message: String) {
         Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
@@ -25,4 +32,6 @@ class SignInActivity : AppCompatActivity(), SignInNavigator {
     override fun fail(message: String) {
         Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
     }
+
+
 }

@@ -1,4 +1,4 @@
-package com.dsm2018.playground_remastered.Activity.Main
+package com.dsm2018.playground_remastered.ui.main
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -10,8 +10,6 @@ class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var binding: ActivitySigninBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
-        ssdfsdsdfsad    
 
     }
 }

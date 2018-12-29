@@ -1,4 +1,4 @@
-package com.dsm2018.playground_remastered.Activity.SignIn
+package com.dsm2018.playground_remastered.ui.signIn
 
 interface SignInNavigator{
     fun success(result: String)

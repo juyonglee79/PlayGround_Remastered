@@ -1,4 +1,4 @@
-package com.dsm2018.playground_remastered.Model
+package com.dsm2018.playground_remastered.model
 
 import com.google.gson.annotations.*
 
