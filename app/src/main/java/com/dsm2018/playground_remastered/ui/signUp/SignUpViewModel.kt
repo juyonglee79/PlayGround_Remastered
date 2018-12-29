@@ -41,6 +41,5 @@ class SignUpViewModel : ViewModel() {
     fun MutableLiveData<String>.isValueBlank() =
             this.value.isNullOrBlank()
 
-    sdf
 
 }
