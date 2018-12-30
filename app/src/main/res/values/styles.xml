@@ -12,11 +12,8 @@
         <item name="tabIndicatorColor">?attr/colorAccent</item>
     </style>
 
-    <style name="SplashTheme" parent="AppTheme">
-        <item name="android:height">200dp</item>
-        <item name="android:layout_weight">250dp</item>
-        <item name="android:background">@drawable/app_logo</item>
-        <item name="android:text">효율적인 학교 생활</item>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_item</item>
     </style>
 
 </resources>

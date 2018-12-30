@@ -10,7 +10,7 @@ import com.dsm2018.playground_remastered.databinding.ActivitySigninBinding
 import com.dsm2018.playground_remastered.ui.main.MainActivity
 import com.dsm2018.playground_remastered.util.DataBindingActivity
 
-class SignInActivity : DataBindingActivity<ActivitySigninBinding>(), SignInNavigator {
+class SignInActivity : DataBindingActivity<ActivitySigninBinding>(), SignInNavigator{
 
     override val layoutId: Int
         get() = R.layout.activity_signin

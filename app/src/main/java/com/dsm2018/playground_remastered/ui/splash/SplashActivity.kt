@@ -8,13 +8,11 @@ import com.dsm2018.playground_remastered.ui.signIn.SignInActivity
 
 class SplashActivity : AppCompatActivity() {
 
-    class SplashActivity: AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            val intent = Intent(this, SignInActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+        val intent = Intent(applicationContext, SignInActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
