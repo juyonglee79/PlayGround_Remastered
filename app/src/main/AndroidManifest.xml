@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.splash.SplashActivity"
+            android:name="com.dsm2018.playground_remastered.ui.splash.SplashActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +20,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.dsm2018.playground_remastered.ui.signIn.SignInActivity"/>
-        <activity android:name="com.dsm2018.playground_remastered.ui.signUp.SignUpActivity"/>
         <activity android:name="com.dsm2018.playground_remastered.ui.main.MainActivity"/>
     </application>
 
