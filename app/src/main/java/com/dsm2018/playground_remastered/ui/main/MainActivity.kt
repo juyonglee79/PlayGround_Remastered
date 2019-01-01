@@ -15,16 +15,20 @@ class MainActivity : AppCompatActivity() {
 
     private val navigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_food -> {
+            R.id.navigation_apply -> {
                 message.setText(R.string.navigation_apply)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_submit -> {
+            R.id.navigation_post -> {
                 message.setText(R.string.navigation_post)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_notice -> {
+            R.id.navigation_tournamet -> {
                 message.setText(R.string.navigation_tournament)
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_myPage -> {
+                message.setText(R.string.navigation_mypage)
                 return@OnNavigationItemSelectedListener true
             }
         }
