@@ -12,6 +12,10 @@
         <item name="tabIndicatorColor">?attr/colorAccent</item>
     </style>
 
+    <style name="MainBottomNavigationViewStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">12sp</item>
+    </style>
+
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_item</item>
     </style>

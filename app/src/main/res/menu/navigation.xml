@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_food"
+            android:icon="@drawable/ic_frag_apply"
+            android:title="@string/navigation_apply"/>
+
+    <item
+            android:id="@+id/navigation_submit"
+            android:icon="@drawable/ic_frag_post"
+            android:title="@string/navigation_post"/>
+
+    <item
+            android:id="@+id/navigation_notice"
+            android:icon="@drawable/ic_frag_tournament"
+            android:title="@string/navigation_tournament"/>
+
+    <item
+            android:id="@+id/navigation_myPage"
+            android:icon="@drawable/ic_frag_mypage"
+            android:title="@string/navigation_mypage"/>
+
+</menu>

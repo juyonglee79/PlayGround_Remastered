@@ -8,10 +8,9 @@ import android.widget.Toast
 import com.dsm2018.playground_remastered.R
 import com.dsm2018.playground_remastered.databinding.ActivitySignInBinding
 import com.dsm2018.playground_remastered.ui.main.MainActivity
-import com.dsm2018.playground_remastered.ui.signUp.SignUpActivity
 import com.dsm2018.playground_remastered.util.DataBindingActivity
 
-class SignInActivity : DataBindingActivity<ActivitySignInBinding>(), SignInNavigator{
+open class SignInActivity : DataBindingActivity<ActivitySignInBinding>(), SignInNavigator {
     override val layoutId: Int
         get() = R.layout.activity_sign_in
 
@@ -31,10 +30,6 @@ class SignInActivity : DataBindingActivity<ActivitySignInBinding>(), SignInNavig
 
     override fun fail(message: String) {
         Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
-    }
-
-    override fun intent() {
-        startActivity(Intent(applicationContext, SignUpActivity::class.java))
     }
 
 
