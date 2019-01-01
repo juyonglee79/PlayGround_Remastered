@@ -3,5 +3,5 @@
     <string name="navigation_apply">신청</string>
     <string name="navigation_post">게시글</string>
     <string name="navigation_tournament">대회</string>
-    <string name="navigation_mypage">마이페이지</string>
+    <string name="navigation_myPage">마이페이지</string>
 </resources>

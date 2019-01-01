@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_myPage -> {
-                message.setText(R.string.navigation_mypage)
+                message.setText(R.string.navigation_myPage)
                 return@OnNavigationItemSelectedListener true
             }
         }
