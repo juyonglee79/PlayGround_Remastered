@@ -7,7 +7,6 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import com.dsm2018.playground_remastered.R
-import com.dsm2018.playground_remastered.databinding.ActivitySignInBinding
 import com.dsm2018.playground_remastered.ui.signIn.SignInActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
