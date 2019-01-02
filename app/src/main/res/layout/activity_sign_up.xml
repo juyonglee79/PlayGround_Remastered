@@ -29,7 +29,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/et_sign_up_name"
+            android:id="@+id/signUp_name_et"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
@@ -50,7 +50,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/et_sign_up__id"
+            android:id="@+id/signUp_id_et"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
@@ -66,12 +66,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_sign_up_name"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_name_et"
             app:layout_constraintVertical_bias="0.0" />
 
 
         <EditText
-            android:id="@+id/et_sign_up_password"
+            android:id="@+id/signUp_pw_et"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
@@ -88,11 +88,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_sign_up__id"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_id_et"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/et_sign_up_passwordConfirm"
+            android:id="@+id/signUp_pwConfrim_et"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
@@ -109,7 +109,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_sign_up_password"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_pw_et"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
@@ -129,7 +129,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_sign_up_passwordConfirm"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_pwConfrim_et"
             app:layout_constraintVertical_bias="0.0" />
 
 
