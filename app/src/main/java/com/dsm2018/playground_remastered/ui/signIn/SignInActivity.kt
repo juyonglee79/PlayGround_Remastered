@@ -1,22 +1,23 @@
 package com.dsm2018.playground_remastered.ui.signIn
 
-import android.annotation.SuppressLint
 import android.arch.lifecycle.ViewModelProviders
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import com.dsm2018.playground_remastered.R
 import com.dsm2018.playground_remastered.databinding.ActivitySignInBinding
 import com.dsm2018.playground_remastered.ui.main.MainActivity
+import com.dsm2018.playground_remastered.ui.signUp.SignUpActivity
 import com.dsm2018.playground_remastered.util.DataBindingActivity
+import org.jetbrains.anko.startActivity
 
-open class SignInActivity : DataBindingActivity<ActivitySignInBinding>(), SignInNavigator {
+class SignInActivity : DataBindingActivity<ActivitySignInBinding>(), SignInNavigator {
+
     override val layoutId: Int
         get() = R.layout.activity_sign_in
 
-    val viewModel: SignInViewModel by lazy { ViewModelProviders.of(this)[SignInViewModel::class.java] }
+    private val factory = SignInViewModelFactory(this)
+    private val viewModel: SignInViewModel by lazy { ViewModelProviders.of(this, factory).get(SignInViewModel::class.java) }
 
-    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding.vm = viewModel
@@ -24,13 +25,20 @@ open class SignInActivity : DataBindingActivity<ActivitySignInBinding>(), SignIn
     }
 
     override fun success(message: String) {
-        Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
-        startActivity(Intent(applicationContext, MainActivity::class.java))
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        startActivity<MainActivity>()
     }
 
     override fun fail(message: String) {
-        Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
+    override fun signInBtn() {
+        startActivity<MainActivity>()
+    }
+
+    override fun signUpBtn() {
+        startActivity<SignUpActivity>()
+    }
 
 }

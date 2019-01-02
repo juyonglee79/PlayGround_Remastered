@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-            android:id="@+id/navigation_food"
+            android:id="@+id/navigation_apply"
             android:icon="@drawable/ic_frag_apply"
             android:title="@string/navigation_apply"/>
 
     <item
-            android:id="@+id/navigation_submit"
+            android:id="@+id/navigation_post"
             android:icon="@drawable/ic_frag_post"
             android:title="@string/navigation_post"/>
 
     <item
-            android:id="@+id/navigation_notice"
+            android:id="@+id/navigation_tournament"
             android:icon="@drawable/ic_frag_tournament"
             android:title="@string/navigation_tournament"/>
 

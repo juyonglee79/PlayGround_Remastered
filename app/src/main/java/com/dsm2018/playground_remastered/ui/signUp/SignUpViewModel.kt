@@ -3,7 +3,7 @@ package com.dsm2018.playground_remastered.ui.signUp
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 
-class SignUpViewModel : ViewModel() {
+class SignUpViewModel(private val signUpNavigator : SignUpNavigator?) : ViewModel() {
 
     var signUpName = MutableLiveData<String>()
     var signUpId = MutableLiveData<String>()
@@ -13,9 +13,9 @@ class SignUpViewModel : ViewModel() {
 
     fun signUpPost() {
         if (signUpName.isValueBlank() || signUpId.isValueBlank() || signUpPw.isValueBlank() || signUpConfirm.isValueBlank()) {
-//            signInNavigator.fail("아이디와 패스워드를 입력하세요.")
+            signUpNavigator?.fail("모든 항목을 입력하세요.")
         } else {
-
+            signUpNavigator!!.signUpPost()
         }
     }
 
