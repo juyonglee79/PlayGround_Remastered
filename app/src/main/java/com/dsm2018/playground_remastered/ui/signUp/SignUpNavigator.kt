@@ -4,5 +4,4 @@ interface SignUpNavigator {
     fun success(message: String)
     fun fail(message: String)
     fun signUpPost()
-    fun Making()
 }
